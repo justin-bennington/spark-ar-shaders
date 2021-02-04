@@ -1,2 +1,2 @@
 # spark-ar-shaders
-A set of shaders I've authored for Spark AR Studio.
+A set of shaders for Spark AR Studio.
