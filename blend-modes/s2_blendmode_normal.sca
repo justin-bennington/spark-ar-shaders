@@ -1,0 +1,17 @@
+//==============================================================================
+// Normal Blend Mode for textures by @somewhere.systems
+//==============================================================================
+
+// @param layer0
+// @param layer1
+// @param [default=1.0] opacity0
+// @param [default=1.0] opacity1
+// @return out
+
+vec4 blendNormal(vec4 layer0, vec4 layer1) {
+	return layer1;
+}
+
+vec4 blendNormal(vec4 layer0, vec4 layer1, float opacity0, float opacity1) {
+	return (blendNormal(layer0*opacity0, layer1*opacity1) + layer0*opacity0 * (1.0 - layer1.a*opacity1));
+}
